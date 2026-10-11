@@ -1,0 +1,150 @@
+[
+  {
+    "type": "function",
+    "name": "WIDTH",
+    "inputs": [],
+    "outputs": [
+      { "type": "uint16", "name": "" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "HEIGHT",
+    "inputs": [],
+    "outputs": [
+      { "type": "uint16", "name": "" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "COOLDOWN",
+    "inputs": [],
+    "outputs": [
+      { "type": "uint64", "name": "" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "PALETTE_SIZE",
+    "inputs": [],
+    "outputs": [
+      { "type": "uint8", "name": "" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "lastPlacedAt",
+    "inputs": [
+      { "type": "address", "name": "player" }
+    ],
+    "outputs": [
+      { "type": "uint64", "name": "" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "nextAllowedAt",
+    "inputs": [
+      { "type": "address", "name": "player" }
+    ],
+    "outputs": [
+      { "type": "uint64", "name": "" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getTile",
+    "inputs": [
+      { "type": "uint16", "name": "x" },
+      { "type": "uint16", "name": "y" }
+    ],
+    "outputs": [
+      { "type": "uint8", "name": "" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getRow",
+    "inputs": [
+      { "type": "uint16", "name": "y" }
+    ],
+    "outputs": [
+      { "type": "bytes", "name": "row" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getCanvas",
+    "inputs": [],
+    "outputs": [
+      { "type": "bytes", "name": "canvas" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getRegion",
+    "inputs": [
+      { "type": "uint16", "name": "x0" },
+      { "type": "uint16", "name": "y0" },
+      { "type": "uint16", "name": "w" },
+      { "type": "uint16", "name": "h" }
+    ],
+    "outputs": [
+      { "type": "bytes", "name": "region" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "placeTile",
+    "inputs": [
+      { "type": "uint16", "name": "x" },
+      { "type": "uint16", "name": "y" },
+      { "type": "uint8", "name": "color" }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "event",
+    "name": "TilePlaced",
+    "inputs": [
+      { "type": "address", "name": "player", "indexed": true },
+      { "type": "uint16", "name": "x", "indexed": false },
+      { "type": "uint16", "name": "y", "indexed": false },
+      { "type": "uint8", "name": "color", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "error",
+    "name": "OutOfBounds",
+    "inputs": [
+      { "type": "uint16", "name": "x" },
+      { "type": "uint16", "name": "y" }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "InvalidColor",
+    "inputs": [
+      { "type": "uint8", "name": "color" }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "CooldownActive",
+    "inputs": [
+      { "type": "uint64", "name": "nextAllowedAt" }
+    ]
+  }
+]

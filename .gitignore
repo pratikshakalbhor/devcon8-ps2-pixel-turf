@@ -1,0 +1,15 @@
+# Compiler output
+out/
+cache/
+
+# Broadcast / deployment logs
+broadcast/
+
+# Dependencies
+node_modules/
+dist/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
