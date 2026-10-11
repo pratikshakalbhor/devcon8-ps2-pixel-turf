@@ -91,11 +91,7 @@ contract PixelTurf {
     /// @param y0 Top row of the region.
     /// @param w Region width in tiles.
     /// @param h Region height in tiles.
-    function getRegion(uint16 x0, uint16 y0, uint16 w, uint16 h)
-        external
-        view
-        returns (bytes memory region)
-    {
+    function getRegion(uint16 x0, uint16 y0, uint16 w, uint16 h) external view returns (bytes memory region) {
         uint256 ux = uint256(x0);
         uint256 uy = uint256(y0);
         uint256 uw = uint256(w);

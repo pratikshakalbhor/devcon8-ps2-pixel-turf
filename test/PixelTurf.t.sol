@@ -280,9 +280,7 @@ contract PixelTurfTest is Test {
         turf.placeTile(20, 20, 1);
         assertEq(turf.getTile(20, 20), 1);
 
-        vm.expectRevert(
-            abi.encodeWithSelector(PixelTurf.CooldownActive.selector, uint64(block.timestamp) + CD)
-        );
+        vm.expectRevert(abi.encodeWithSelector(PixelTurf.CooldownActive.selector, uint64(block.timestamp) + CD));
         turf.placeTile(21, 20, 2);
 
         vm.warp(block.timestamp + CD);
