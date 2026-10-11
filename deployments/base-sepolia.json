@@ -1,0 +1,9 @@
+{
+  "chainId": 84532,
+  "network": "base-sepolia",
+  "address": "0x5b24c2AE617b25EeeAC5e0cB258ECcBCc07B6d9A",
+  "deploymentBlock": 47984584,
+  "deployTxHash": "0x47d45e4d1ab240ce27681b58c45c2d986c7ac74654f159b75128db3ea75afaf1",
+  "width": 64,
+  "height": 64
+}

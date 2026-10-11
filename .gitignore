@@ -7,9 +7,19 @@ broadcast/
 
 # Dependencies
 node_modules/
+ui/node_modules/
+
+# Build output
 dist/
+ui/dist/
+
+# Logs
+*.log
 
 # Environment / secrets
 .env
 .env.*
 !.env.example
+ui/.env
+ui/.env.*
+!ui/.env.example

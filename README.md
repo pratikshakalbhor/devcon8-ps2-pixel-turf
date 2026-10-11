@@ -5,8 +5,19 @@ A shared, immutable 64x64 pixel canvas deployed on **Base Sepolia**. Anyone can 
 - Canvas dimensions: **64x64**
 - Cooldown: **30 seconds** per address
 - Palette: **16 colors** (index 0 is reserved as the blank/never-painted color)
-- Deployed Base Sepolia address: `VITE_PIXELTURF_ADDRESS` (see `ui/.env.example` and deployed contract if available)
-- Basescan: https://sepolia.basescan.org/address/<deployed-address>
+
+## Deployment
+
+| Field | Value |
+|---|---|
+| Network | Base Sepolia (chain ID 84532) |
+| Address | [0x5b24c2AE617b25EeeAC5e0cB258ECcBCc07B6d9A](https://sepolia.basescan.org/address/0x5b24c2AE617b25EeeAC5e0cB258ECcBCc07B6d9A) |
+| Deploy tx | [0x47d45e4d1ab240ce27681b58c45c2d986c7ac74654f159b75128db3ea75afaf1](https://sepolia.basescan.org/tx/0x47d45e4d1ab240ce27681b58c45c2d986c7ac74654f159b75128db3ea75afaf1) |
+| Deployment block | 47984584 |
+| Canvas | 64 x 64 |
+| Cooldown | 30 seconds |
+
+A machine-readable copy lives in [`deployments/base-sepolia.json`](deployments/base-sepolia.json).
 
 ## How to paint
 1. Connect a wallet (injected or Coinbase Wallet).
